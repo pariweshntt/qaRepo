@@ -48,7 +48,7 @@
 					"script": {
 						"id": "11484932-a98c-46f2-83f6-fe23d5c74b36",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"var skipTest =true; (skipTest ? pm.test.skip : pm.test)(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"pm.test(\"Response time is less than 200ms\", function () {\r",
